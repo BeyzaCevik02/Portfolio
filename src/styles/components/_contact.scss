@@ -1,0 +1,125 @@
+@import "../settings/mixins";
+@import "../settings/settings";
+
+.contact{
+    background-color: #212529;
+    color: $white;
+    padding-bottom: 6em;
+    
+}
+.contact__container{
+    @include flex(row, 4em, center, stretch, wrap);
+    padding: 0 8em;
+}
+.contact__info, .contact__form{
+    width: calc(100% / 2 - 2em);
+}
+.contact__icon{
+    padding: 2em 0;
+}
+.contact__icontext{
+    @include flex(row, 1em, flex-start, center, wrap);
+    padding: 1em 0;
+    img{
+        width: 40px;
+        height: auto;
+    }
+}
+
+.contact__socials{
+    p{
+        padding-bottom: 1em;
+    }
+}
+
+.contact__socialsicons{
+    @include flex(row, 2em, flex-start, center, wrap);
+    img{
+        width: 40px;
+        height: auto;
+    }
+}
+.contact__form {
+    background-color: #3c4045;
+    padding: 2em;
+    border-radius: 12px;
+    box-shadow: 10px 5px 5px #22222280;
+    form {
+        @include flex(column, 1em, center, stretch, wrap);
+        .contact__item{
+            @include flex(column, 0.5em, flex-start, flex-start, wrap);
+        }
+        label {
+            width: 100%;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-top: 0.5em;
+            border: none;
+            border-radius: 12px;
+            background-color: #676d74;
+            color: #ffffff;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+
+        }
+        .btn{
+            font-family: $font_normal;
+            font-size: 18px;
+            text-decoration: none;
+            border: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+
+            &:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+        }
+    }
+    .contact__message {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #f1f1f1;
+        text-align: center;
+    }
+}
+@include device(1400px){
+    .contact__container{
+        padding: 0 6em;
+    }
+    .contact__info{
+        width: calc(40% - 2em);
+    }
+    .contact__form{
+        width: calc(60% - 2em);
+    }
+}
+@include device(1000px){
+    .contact__container{
+        flex-direction: column;
+    }
+    .contact__info, .contact__form{
+        width: 100%;
+    }
+}
+@include device(800px){
+    .contact__container{
+        padding: 0 4em;
+    }
+}
+@include device(500px){
+    .contact__info{
+        padding: 0 1em;
+    }
+    .contact__container{
+        padding: 0 1em;
+    }
+    .contact__form{
+        padding: 2em 1em;
+    }
+}

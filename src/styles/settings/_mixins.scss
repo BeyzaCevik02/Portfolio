@@ -1,0 +1,50 @@
+//--------------------------------------------------------------------------
+// MEDIA QUERY
+//--------------------------------------------------------------------------
+@mixin device($device) {
+    @media screen and (max-width: $device) { @content; }
+}
+
+//--------------------------------------------------------------------------
+// FLEX BOX
+//--------------------------------------------------------------------------
+@mixin flex($direction: row, $gap: 0, $justify: flex-start, $align: flex-start, $wrap: nowrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    gap: $gap;
+}
+
+//--------------------------------------------------------------------------
+// GRID
+//--------------------------------------------------------------------------
+@mixin grid($rowStart, $rowEnd, $columnStart, $columnEnd){
+    grid-row-start: $rowStart;
+    grid-row-end: $rowEnd;
+    grid-column-start: $columnStart;
+    grid-column-end: $columnEnd;
+}
+
+//--------------------------------------------------------------------------
+// BIGGER
+//--------------------------------------------------------------------------
+@mixin bigger($color){
+    position: relative;
+    &::after, &::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: calc((100vw - $maxWidth) / 2 + 1px);
+        top: 0;
+        background-color: $color;
+        z-index: 1;
+    }
+    &::before{
+        left: calc(-1 * ((100vw - $maxWidth) / 2));
+    }
+    &::after{
+        right: calc(-1 * ((100vw - $maxWidth) / 2));
+    }
+}

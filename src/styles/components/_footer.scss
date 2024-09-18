@@ -1,0 +1,12 @@
+footer{
+    @include flex(column, 1em, space-between, center, nowrap);
+    padding: 1em 0;
+    
+}
+@include device(500px){
+    footer{
+        p{
+            font-size: 16px;
+        }
+    }
+}

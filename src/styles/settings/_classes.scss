@@ -1,0 +1,286 @@
+.App{
+    overflow: hidden;
+}
+.titles {
+    @include flex(column, 0, center, center, nowrap);
+    padding: 4rem 0;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+
+    h1 {
+        position: absolute;
+        bottom: 60px;
+        color: $white;
+        z-index: 1;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    h2 {
+        color: $color_1;
+        font-size: 85px;
+        opacity: 0.25;
+    }
+}
+
+b {
+    font-weight: 500;
+}
+
+.btn {
+    color: $white;
+    font-weight: 500;
+    background-color: $color_1;
+    padding: 0.5em 2em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: #123983;
+        cursor: pointer;
+    }
+}
+
+.card {
+    width: calc(100% / 3 - 2em);
+    @include flex(column, 0, space-between, stretch, nowrap);
+    box-shadow: 5px 5px 5px #22222280;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px;
+    }
+    @media (max-width: 1500px) {
+        width: calc(50% - 2em);
+    }
+
+    @media (max-width: 1200px) {
+        width: calc(100% - 2em);
+    }
+}
+
+.card__image {
+    width: 100%;
+    height: 230px;
+    @include flex(column, 0, center, center, nowrap);
+
+    img {
+        border-radius: 12px 12px 0 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.card__bottom {
+    border-radius: 0 0 12px 12px;
+    background-color: #212529;
+    padding: 2em;
+    width: 100%;
+    min-height: max-content;
+    flex-grow: 1;
+
+    @include flex(column, 0, stretch, stretch, nowrap);
+}
+
+.card__title {
+    color: $white;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2rem;
+        width: 100%;
+        border-bottom: 1px solid #5C5C5C;
+    }
+}
+
+.card__tags {
+    @include flex(row, 1em, flex-start, center, wrap);
+    padding-top: 4em;
+
+    .tag {
+        padding: 0.5em 1em;
+        border-radius: 30px;
+        text-transform: uppercase;
+
+        p {
+            font-weight: 500;
+            font-size: 12px;
+
+        }
+
+        &.html {
+            background-color: rgba(227, 76, 38, 0.3);
+            border: 2px solid #e34c26;
+            color: #e34c26;
+        }
+
+        &.scss {
+            background-color: rgba(198, 83, 140, 0.3);
+            border: 2px solid #c6538c;
+            color: #c6538c;
+        }
+
+        &.js {
+            background-color: rgba(240, 219, 79, 0.3);
+            border: 2px solid #f0db4f;
+            color: #f0db4f;
+        }
+
+        &.laravel {
+            background-color: rgba(255, 45, 32, 0.3);
+            border: 2px solid #ff2d20;
+            color: #ff2d20;
+        }
+
+        &.api {
+            background-color: rgba(59, 130, 246, 0.3);
+            border: 2px solid #3b82f6;
+            color: #3b82f6;
+        }
+
+        &.xd {
+            background-color: rgba(74, 47, 189, 0.3);
+            border: 2px solid #4a2fbd;
+            color: #4a2fbd;
+        }
+
+        &.gsap {
+            background-color: rgba(136, 206, 2, 0.3);
+            border: 2px solid #88ce02;
+            color: #88ce02;
+        }
+
+        &.database {
+            background-color: rgba(59, 130, 246, 0.3);
+            border: 2px solid #3b82f6;
+            color: #3b82f6;
+        }
+
+        &.craft-cms {
+            background-color: rgba(227, 79, 38, 0.3);
+            border: 2px solid #e34f26;
+            color: #e34f26;
+        }
+
+        &.twig {
+            background-color: rgba(136, 206, 2, 0.3);
+            border: 2px solid #88ce02;
+            color: #88ce02;
+        }
+
+        &.wampserver {
+            background-color: rgba(198, 83, 140, 0.3);
+            border: 2px solid #c6538c;
+            color: #c6538c;
+        }
+
+        &.wordpress {
+            background-color: rgba(33, 117, 155, 0.3);
+            border: 2px solid #21759b;
+            color: #21759b;
+        }
+
+        &.elementor {
+            background-color: rgba(213, 78, 144, 0.3);
+            border: 2px solid #d54e90;
+            color: #d54e90;
+        }
+
+        &.local-app {
+            background-color: rgba(136, 206, 2, 0.3);
+            border: 2px solid #88ce02;
+            color: #88ce02;
+        }
+
+        &.vue-js {
+            background-color: rgba(65, 184, 131, 0.3);
+            border: 2px solid #41b883;
+            color: #41b883;
+        }
+        &.craft {
+            background-color: rgba(227, 79, 38, 0.3);
+            border: 2px solid #e34f26;
+            color: #e34f26;
+        }
+
+        &.wampserver64 {
+            background-color: rgba(198, 83, 140, 0.3);
+            border: 2px solid #c6538c;
+            color: #c6538c;
+        }
+
+        &.local {
+            background-color: rgba(136, 206, 2, 0.3);
+            border: 2px solid #88ce02;
+            color: #88ce02;
+        }
+
+        &.vue\.js {
+            background-color: rgba(65, 184, 131, 0.3);
+            border: 2px solid #41b883;
+            color: #41b883;
+        }
+
+    }
+}
+
+@include device(900px) {
+    .titles {
+        padding: 2rem 0;
+
+        h1 {
+            font-size: 25px;
+            bottom: 40px;
+        }
+
+        h2 {
+            font-size: 70px;
+        }
+    }
+
+}
+
+@include device(700px) {
+    .titles {
+        h1 {
+            font-size: 21px;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+    }
+    .card__image {
+        height: 200px;    
+    }
+}
+
+@include device(500px) {
+    .titles {
+        h1 {
+            bottom: 30px;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+    }
+
+    .card__tags {
+        .tag {
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+}

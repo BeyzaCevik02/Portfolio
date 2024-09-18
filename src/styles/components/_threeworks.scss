@@ -1,0 +1,42 @@
+@import "../settings/mixins";
+@import "../settings/settings";
+
+.three__works {
+    background-color: #44494F;
+    padding: 0 8em 6em 8em;
+
+}
+
+.three__works__cards {
+    @include flex(row, 2em, flex-start, stretch, wrap);
+}
+
+.three__works__button {
+    padding-top: 4em;
+    @include flex(column, 2em, center, center, wrap);
+
+}
+
+@include device(1400px) {
+    .three__works {
+        padding: 0 6em 6em 6em;
+    }
+}
+
+@include device(1200px) {
+    .three__works__cards {
+        @include flex(row, 2em, center, stretch, wrap);
+    }
+}
+
+@include device(800px) {
+    .three__works {
+        padding: 0 4em 4em 4em;
+    }
+}
+
+@include device(500px) {
+    .three__works {
+        padding: 0 0 4em 0;
+    }
+}

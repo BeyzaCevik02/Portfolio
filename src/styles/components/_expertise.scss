@@ -1,0 +1,53 @@
+@import "../settings/mixins";
+@import "../settings/settings";
+
+.expertise{
+    padding: 6em 8em 4em 8em;
+    @include flex(row, 4em, space-between, flex-start, wrap);
+    
+}
+.expertise__left, .expertise__right{
+    width: calc(100% / 2 - 4em);
+}
+
+.expertise__block{
+    width: 100%;
+    padding-bottom: 3em;
+}
+.expertise__block__title{
+    @include flex(row, 2em, space-between, flex-start, nowrap);
+    padding-bottom: 10px;
+    p{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+.expertise__block__bar{
+    height: 10px;
+    background-color: #D9D9D9;
+    border-radius: 30px;
+}
+@include device(1400px){
+    .expertise{
+        padding: 6em 6em 4em 6em;
+        @include flex(row, 2em, space-between, flex-start, wrap);
+    }   
+    .expertise__left, .expertise__right{
+        width: calc(100% / 2 - 2em);
+    }
+}
+@include device(800px){
+    .expertise{
+        padding: 4em;
+    }   
+}
+@include device(500px){
+    .expertise{
+        padding: 4em 2em 2em 2em;
+        @include flex(column, 0, space-between, flex-start, wrap);
+
+    }   
+    .expertise__left, .expertise__right{
+        width: 100%;
+    }
+}

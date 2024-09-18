@@ -1,0 +1,120 @@
+[
+    {
+        "title": "Final Schoolproject",
+        "description": "Developed an application for managing email communications during my internship. Integrated a mailing API to streamline communication processes.",
+        "image": "/assets/works/graduaatsproef.png",
+        "tags": [
+            "HTML",
+            "SCSS",
+            "JS",
+            "LARAVEL",
+            "API CALLS",
+            "API REQUESTS",
+            "XD"
+        ]
+    },
+    {
+        "title": "Internship <br /> Client Website",
+        "description": "Built a dynamic website for a client based on provided designs. Implemented GSAP to enhance user interactions with smooth animations.",
+        "image": "/assets/works/locren.png",
+        "tags": [
+            "HTML",
+            "SCSS",
+            "JS",
+            "GSAP"
+        ],
+        "link": "https://www.locren.be/"
+    },
+    {
+        "title": "Internship <br /> Client Website",
+        "description": "Built a website based of a design for a client. First time managing database for contact form.",
+        "image": "/assets/works/taxi.png",
+        "tags": [
+            "HTML",
+            "SCSS",
+            "JS",
+            "DATABASE"
+        ],
+        "link": "https://taxi-ronny.be/"
+
+    },
+    {
+        "title": "Schoolproject <br /> Craft CMS V5",
+        "description": "Developed a content-rich website using Craft CMS V5 and Twig for the coding. Based of a web design I created earlier.",
+        "image": "/assets/works/craftcms.png",
+        "tags": [
+            "HTML",
+            "SCSS",
+            "CRAFT CMS",
+            "TWIG",
+            "WAMPSERVER64"
+        ]
+    },
+    {
+        "title": "Schoolproject <br /> WordPress",
+        "description": "Built a website using WordPress and Elementor with the same design as the Craft CMS project. Used a local app to connect to the server.",
+        "image": "/assets/works/wordpressks.png",
+        "tags": [
+            "WORDPRESS",
+            "ELEMENTOR",
+            "LOCAL APP"
+        ]
+    },
+    {
+        "title": "Schoolproject <br /> WordPress",
+        "description": "Built a website based on the specifications provided by the teacher. Used a local app to connect to the server.",
+        "image": "/assets/works/wordpress.png",
+        "tags": [
+            "WORDPRESS",
+            "ELEMENTOR",
+            "LOCAL APP"
+        ]
+    },
+    {
+        "title": "Schoolproject <br /> Vue.js",
+        "description": "Built an interactive web application using Vue.js, implementing dynamic features with data extracted from JSON files. Developed functionalities for filtering, displaying products, adding to cart, saving information, and managing the cart.",
+        "image": "/assets/works/kserenity.png",
+        "tags": [
+            "VUE.JS",
+            "HTML",
+            "SCSS"
+        ]
+    },
+    {
+        "title": "Schoolproject <br /> SCSS",
+        "description": "Designed and developed a website with a focus on advanced SCSS styling techniques. This is where my K-Serenity Skincare Design was born.",
+        "image": "/assets/works/kserenity.png",
+        "tags": [
+            "HTML",
+            "SCSS",
+            "XD"        
+        ]
+    },
+    {
+        "title": " My Old Portfolio",
+        "description": "Created my first portfolio website to showcase my skills and projects.",
+        "image": "/assets/works/old.png",
+        "tags": [
+            "HTML",
+            "SCSS",
+            "JS",
+            "XD"
+        ],
+        "link": "https://beyzacevik.netlify.app/"
+
+    },
+    {
+        "title": "First Schoolproject",
+        "description": "Built a foundational website for a school project, implementing basic web development principles. Included essential features like responsive design.",
+        "image": "/assets/works/ahoi.png",
+        "tags": [
+            "HTML",
+            "SCSS",
+            "JS",
+            "XD"
+        ],
+        "link": "https://jobahoi.netlify.app/"
+
+    }
+
+]

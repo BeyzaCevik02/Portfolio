@@ -1,0 +1,119 @@
+@import "../settings/mixins";
+@import "../settings/settings";
+
+.skills {
+  background-color: #212529;
+  padding-bottom: 6em;
+
+}
+
+.skills__content {
+  @include flex(row, 2em, space-between, flex-start, wrap);
+  color: $white;
+  padding: 2em 8em;
+}
+
+.skills__card {
+  width: calc(100% / 2 - 2em);
+
+  .skills__card__icon {
+    padding: 2em 0;
+
+    img {
+      width: 15%;
+      height: auto;
+    }
+  }
+
+  .skills__card__title {
+    font-size: 21px;
+    padding-bottom: 1em;
+
+    span {
+      color: $color_1;
+    }
+
+  }
+
+}
+
+@include device(1400px) {
+  .skills__content {
+    padding: 0 6em;
+  }
+}
+
+@include device(1200px) {
+  .skills__card {
+    .skills__card__icon {
+      img {
+        width: 25%;
+        height: auto;
+      }
+    }
+
+    .skills__card__title {
+      font-size: 21px;
+    }
+
+  }
+}
+
+@include device(800px) {
+  .skills__content {
+    padding: 0 4em;
+  }
+
+  .skills__content {
+    @include flex(column, 2em, space-between, flex-start, wrap);
+  }
+
+  .skills__card {
+    width: calc(100% - 2em);
+
+    .skills__card__icon {
+      padding: 10px 0;
+      img {
+        width: 15%;
+        height: auto;
+      }
+    }
+  }
+
+}
+
+@include device(700px) {
+  .skills__card {
+    .skills__card__icon {
+      img {
+        width: 20%;
+        height: auto;
+      }
+    }
+
+    .skills__card__title {
+      font-size: 20px;
+    }
+
+  }
+
+}
+
+@include device(500px) {
+  .skills__content {
+    padding: 0 2em;
+  }
+
+  .skills__card {
+
+    .skills__card__title {
+      font-size: 18px;
+    }
+  }
+
+  .skills__card__text {
+    p {
+      font-size: 16px;
+    }
+  }
+}
