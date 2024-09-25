@@ -1,7 +1,7 @@
 [
     {
         "title": "Final Schoolproject",
-        "description": "Developed an application for managing email communications during my internship. Integrated a mailing API to streamline communication processes.",
+        "description": "Developed an application for managing email communications during my internship at Hamofa Brand Builders. Integrated a mailing API to streamline communication processes.",
         "image": "/assets/works/graduaatsproef.png",
         "tags": [
             "HTML",
@@ -14,7 +14,7 @@
         ]
     },
     {
-        "title": "Internship <br /> Client Website",
+        "title": "Internship Hamofa Brand Builders Client Website",
         "description": "Built a dynamic website for a client based on provided designs. Implemented GSAP to enhance user interactions with smooth animations.",
         "image": "/assets/works/locren.png",
         "tags": [
@@ -26,8 +26,20 @@
         "link": "https://www.locren.be/"
     },
     {
-        "title": "Internship <br /> Client Website",
-        "description": "Built a website based of a design for a client. First time managing database for contact form.",
+        "title": "Internship Hamofa Brand Builders Client Website",
+        "description": "Collaborated in building a website based on a design for a client.",
+        "image": "/assets/works/geerts.png",
+        "tags": [
+            "HTML",
+            "SCSS",
+            "JS",
+            "LARAVEL"       
+        ],
+        "link": "https://geerts-betonstaal.be/"
+    },
+    {
+        "title": "Internship Hamofa Brand Builders Client Website",
+        "description": "Built a website based on a design for a client. First time managing database for contact form.",
         "image": "/assets/works/taxi.png",
         "tags": [
             "HTML",
@@ -39,8 +51,33 @@
 
     },
     {
+        "title": "Internship Hamofa Brand Builders Client Website",
+        "description": "Built a website based on a design for a client. This was my first time building a full website with multiple tabs entirely from scratch on my own.",
+        "image": "/assets/works/neyens.png",
+        "tags": [
+            "HTML",
+            "SCSS",
+            "JS",
+            "LARAVEL"
+        ],
+        "clickable": false  
+    },
+    {
+        "title": "Internship Hamofa Brand Builders Client Website",
+        "description": "Collaborated in building a website based on a design for a client.",
+        "image": "/assets/works/multi.png",
+        "tags": [
+            "HTML",
+            "SCSS",
+            "JS",
+            "LARAVEL"
+        ],
+        "clickable": false 
+    },
+    
+    {
         "title": "Schoolproject <br /> Craft CMS V5",
-        "description": "Developed a content-rich website using Craft CMS V5 and Twig for the coding. Based of a web design I created earlier.",
+        "description": "Developed a content-rich website using Craft CMS V5 and Twig for the coding. Based on a web design I created earlier.",
         "image": "/assets/works/craftcms.png",
         "tags": [
             "HTML",

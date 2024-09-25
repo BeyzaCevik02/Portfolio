@@ -39,7 +39,7 @@ const Expertise = () => {
     const leftSkills = [
         { name: 'HTML/CSS', value: 95 },
         { name: 'JavaScript', value: 75 },
-        { name: 'Laravel', value: 85 },
+        { name: 'Laravel', value: 65 },
         { name: 'Bootstrap', value: 75 },
         { name: 'Vue.js', value: 60 },
         { name: 'Basic React.js', value: 75 },

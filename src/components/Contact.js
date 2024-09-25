@@ -99,7 +99,7 @@ const Contact = () => {
                         <div className="contact__socialsicons">
                             <a href="https://www.linkedin.com/in/beyza-cevik-9875b1235" target="_blank" rel="noopener noreferrer"> <img src="/assets/contact/linkedn.png" alt="linkedin" /></a>
                             <a href="https://www.instagram.com/beyzac_10" target="_blank" rel="noopener noreferrer"> <img src="/assets/contact/insta.png" alt="instagram" /></a>
-                            <a href="https://github.com/BeyzaCevikPXL" target="_blank" rel="noopener noreferrer"> <img src="/assets/contact/github.png" alt="github" /></a>
+                            <a href="https://github.com/BeyzaCevik02" target="_blank" rel="noopener noreferrer"> <img src="/assets/contact/github.png" alt="github" /></a>
                         </div>
                     </div>
                 </div>
